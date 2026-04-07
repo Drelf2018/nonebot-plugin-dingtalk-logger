@@ -1,7 +1,7 @@
 <div align="center">
-  <a href="https://v2.nonebot.dev/store"><img src="https://github.com/A-kirami/nonebot-plugin-dingtalk-logger/blob/resources/nbp_logo.png" width="180" height="180" alt="NoneBotPluginLogo"></a>
+  <a href="https://v2.nonebot.dev/store"><img src="https://github.com/A-kirami/nonebot-plugin-template/blob/resources/nbp_logo.png" width="180" height="180" alt="NoneBotPluginLogo"></a>
   <br>
-  <p><img src="https://github.com/A-kirami/nonebot-plugin-dingtalk-logger/blob/resources/NoneBotPlugin.svg" width="240" alt="NoneBotPluginText"></p>
+  <p><img src="https://github.com/A-kirami/nonebot-plugin-template/blob/resources/NoneBotPlugin.svg" width="240" alt="NoneBotPluginText"></p>
 </div>
 
 <div align="center">
@@ -21,11 +21,10 @@ _✨ 将错误日志推送至钉钉机器人的 NoneBot 插件 ✨_
 
 ## 📖 介绍
 
-在使用 `nonebot` 自带的 `logger` 写入 `ERROR` 级别以上的日志时，会自动发送至钉钉机器人。
+在使用 `nonebot` 自带的 `logger` 写入 `ERROR` 级别以上的日志时，会自动发送至钉钉机器人
 
 ```python
 from nonebot import logger
-
 
 try:
     0 / 0
@@ -80,7 +79,7 @@ except:
 
 | 配置项 | 必填 | 默认值 | 说明 |
 |:-----:|:----:|:----:|:----:|
-| DINGTALK_TOKEN | 是 | 无 | 调用接口的凭证，钉钉提供的 Webhook 链接中 access_token 的值 |
-| DINGTALK_SECRET | 否 | `""` | 安全密钥，创建机器人时在安全设置项选择了加签后，钉钉提供的 SEC 开头的字符串 |
+| DINGTALK_TOKEN | 是 | 无 | 调用接口的凭证，钉钉提供的 `Webhook` 链接中 `access_token` 的值 |
+| DINGTALK_SECRET | 否 | `""` | 安全密钥，安全设置项选择了加签后，提供的 `SEC` 开头的字符串 |
 | DINGTALK_KEYWORDS | 否 | `[]` | 自定义关键词，创建机器人时在安全设置项填入的所有关键词 |
 | DINGTALK_TIMEOUT | 否 | `-1` | 全局请求超时时间，值为正时生效 |
