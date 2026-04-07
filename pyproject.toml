@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nonebot_plugin_dingtalk_logger"
+dynamic = [ "version" ]
+authors = [
+    {name = "Drelf2018"},
+]
+description = "在使用 nonebot 自带的 logger 写入 ERROR 级别以上的日志时，会自动发送至钉钉机器人"
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["NoneBot2", "DingTalk"]
+license = { file = "LICENSE" }
+dependencies = [
+    "nonebot2",
+    "httpx",
+]
