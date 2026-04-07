@@ -23,15 +23,6 @@ _✨ 将错误日志推送至钉钉机器人的 NoneBot 插件 ✨_
 
 在使用 `nonebot` 自带的 `logger` 写入 `ERROR` 级别以上的日志时，会自动发送至钉钉机器人
 
-```python
-from nonebot import logger
-
-try:
-    0 / 0
-except:
-    logger.exception("计算错误")
-```
-
 ## 💿 安装
 
 <details open>
