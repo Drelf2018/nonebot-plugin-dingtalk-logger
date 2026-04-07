@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "nonebot_plugin_dingtalk_logger"
-dynamic = [ "version" ]
+version = "0.0.2"
 authors = [
     {name = "Drelf2018"},
 ]
